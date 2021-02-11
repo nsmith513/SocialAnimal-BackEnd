@@ -17,12 +17,12 @@ import com.revature.repositories.ImageRepository;
 
 @CrossOrigin(origins="*")
 @RestController
-@RequestMapping("/")
+@RequestMapping("/pets")
 public class PetImageController {
     
     @Autowired
     private ImageRepository imgDAO;
-    @GetMapping("/pets")
+    @GetMapping("/getall")
     @ResponseBody
     public ResponseEntity<ArrayList<PetImage>> getAllPets() {
         ArrayList<PetImage> images = imgDAO.findAll();

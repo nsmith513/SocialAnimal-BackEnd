@@ -1,11 +1,8 @@
 package com.revature.models;
 
-<<<<<<< HEAD
 import java.io.Serializable;
 
-=======
 import javax.persistence.Column;
->>>>>>> b8466f89afd7bd800f8081ccc0566c80c595b145
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,13 +15,7 @@ import lombok.Data;
 public class PetImage implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-<<<<<<< HEAD
-    private Integer pet_id;
-    
-    private byte[] petImage;
-=======
     private int id;
->>>>>>> b8466f89afd7bd800f8081ccc0566c80c595b145
     
     @Column(name="link", unique=true, nullable=false)
     private String link;
