@@ -7,14 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import lombok.Data;
+import javax.persistence.Table;
 
 @Entity
-@Data
-public class PetImage implements Serializable{
+@Table(name="pet_image")
+public class PetImage implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
     
     @Column(name="link", unique=true, nullable=false)

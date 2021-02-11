@@ -22,23 +22,23 @@ public class PetImageController {
     
     @Autowired
     private ImageRepository imgDAO;
+    
     @GetMapping("/getall")
     @ResponseBody
     public ResponseEntity<ArrayList<PetImage>> getAllPets() {
-        ArrayList<PetImage> images = imgDAO.findAll();
-        if(images != null) {
-            ResponseEntity.ok(images);
+    	ArrayList<PetImage> images = imgDAO.findAll();
+        if (images != null) {
+            return ResponseEntity.ok(images);
         }
         return ResponseEntity.notFound().build();
     }
-        
     
     @PostMapping("/submit")
     @ResponseBody
     public ResponseEntity<PetImage> submitImage(@RequestBody PetImage img) {
         PetImage image = imgDAO.save(img);
-        if(image != null) {
-            ResponseEntity.ok(image);
+        if (image != null) {
+            return ResponseEntity.ok(image);
         }
         return ResponseEntity.notFound().build();
     }
