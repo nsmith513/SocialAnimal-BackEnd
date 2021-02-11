@@ -1,4 +1,4 @@
-INSERT INTO pet_image VALUES
+INSERT INTO pet_image (id, link) VALUES
     (1, 'https://cdn.discordapp.com/attachments/809169224585052160/809170304299565116/Zeus.JPG'),
     (2, 'https://cdn.discordapp.com/attachments/809169224585052160/809169860172578887/IMG_1458.JPG'),
     (3, 'https://cdn.discordapp.com/attachments/809169224585052160/809169817009258537/DSC_5444.jpg'),

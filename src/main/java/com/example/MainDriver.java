@@ -1,13 +1,14 @@
-package com.revature;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocialAnimalBackEndApplication {
+public class MainDriver {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SocialAnimalBackEndApplication.class, args);
+		SpringApplication.run(MainDriver.class, args);
+
 	}
 
 }
